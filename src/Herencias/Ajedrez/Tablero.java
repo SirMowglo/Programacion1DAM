@@ -14,8 +14,6 @@ public class Tablero {
         for(int numero=1; numero<=8;numero++){
             for(int letra=1; letra<=8; letra++ ){
                 this.tablero.add(new Casilla(letra, numero));
-                //Esto es una prueba
-                //Vamos a probar mas cosas
             }
         }
     }

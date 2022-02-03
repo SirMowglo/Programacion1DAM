@@ -8,8 +8,7 @@ public class Casilla {
 
     //=========================================CONSTRUCTOR===================================================
     public Casilla(int letra, int num) {
-
-        //Probando cosas para github
+        
         if(num%2==0){
             if(letra%2==0){
                 this.color = 'N';
