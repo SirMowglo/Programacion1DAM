@@ -3,7 +3,9 @@ package Herencias.Ajedrez;
 import java.util.ArrayList;
 
 public class Tablero {
+    //Syntaxis del tablero --> tablero.get(letra).get(numero);
     private ArrayList<ArrayList<Casilla>> tablero;
+    //===============================CONSTRUCTOR====================================
     public Tablero() {
         tablero= new ArrayList<ArrayList<Casilla>>();
         for(int letra=1; letra<=8;letra++){
@@ -13,11 +15,11 @@ public class Tablero {
             }
         }
     }
-
+    //==================================METHODS======================================
     @Override
     public String toString() {
         String res="";
-        for(int letra = 0; letra<=7;letra++){
+        for(int letra = 7; letra>=0;letra--){
             for(int numero=0; numero<=7;numero++){
                 if(numero==7){
                     res += this.tablero.get(letra).get(numero) +"\n";

@@ -1,12 +1,12 @@
 package Herencias.Ajedrez;
 
 public class Alfil extends Figura{
-    public Alfil(String color) {
-        super(color, 'A');
+    public Alfil(boolean isWhite) {
+        super(isWhite, 'A');
     }
 
     @Override
-    public void mover() {
+    public void canMove() {
 
     }
 }

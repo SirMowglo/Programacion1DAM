@@ -1,12 +1,12 @@
 package Herencias.Ajedrez;
 
 public class Rey extends Figura{
-    public Rey(String color) {
-        super(color,'K');
+    public Rey(boolean isWhite) {
+        super(isWhite,'K');
     }
 
     @Override
-    public void mover() {
+    public void canMove() {
 
     }
 }

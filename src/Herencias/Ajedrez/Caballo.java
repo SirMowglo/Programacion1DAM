@@ -6,7 +6,7 @@ public class Caballo extends Figura{
     }
 
     @Override
-    public void mover() {
+    public void canMove() {
 
     }
 }

@@ -1,12 +1,12 @@
 package Herencias.Ajedrez;
 
 public class Peon extends Figura {
-    public Peon(String color) {
-        super(color,'P');
+    public Peon(boolean isWhite) {
+        super(isWhite,'P');
     }
 
     @Override
-    public void mover() {
+    public void canMove() {
 
     }
 }

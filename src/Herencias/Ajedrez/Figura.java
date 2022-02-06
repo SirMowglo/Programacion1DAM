@@ -1,22 +1,24 @@
 package Herencias.Ajedrez;
 
 public abstract class Figura {
-    private String color;
+    //TODO -Comprobacion de movimiento de cada figura metiendole por parametro dos posiciones
+    private boolean isWhite;
     private boolean isAlive;
     private char representacion;
 
-    public Figura(String color,char representacion) {
-        this.color = color;
+    //===================================CONSTRUCTOR=========================================
+    public Figura(boolean isWhite,char representacion) {
+        this.isWhite = isWhite;
         this.representacion =representacion;
         this.isAlive=true;
     }
 
     //=================================GETTER Y SETTER=======================================
-    public String getColor() {
-        return color;
+    public Boolean getWhite() {
+        return isWhite;
     }
-    public void setColor(String color) {
-        this.color = color;
+    public void setWhite(boolean isWhite) {
+        this.isWhite = isWhite;
     }
 
     public char getRepresentacion() {
@@ -31,7 +33,7 @@ public abstract class Figura {
     }
 
     //=====================================METHODS===========================================
-    public abstract void mover();
+    public abstract void canMove();
     public void morir(){
         this.isAlive = false;
     }
