@@ -33,7 +33,7 @@ public abstract class Figura {
     }
 
     //=====================================METHODS===========================================
-    public abstract void canMove();
+    public abstract boolean canMove(Casilla start, Casilla end);
     public void morir(){
         this.isAlive = false;
     }

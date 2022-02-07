@@ -6,7 +6,8 @@ public class Rey extends Figura{
     }
 
     @Override
-    public void canMove() {
-
+    public boolean canMove(Casilla start, Casilla end) {
+        boolean res =true;
+        return res;
     }
 }

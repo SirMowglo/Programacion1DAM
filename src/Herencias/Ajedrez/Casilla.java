@@ -5,7 +5,6 @@ public class Casilla {
     protected char letra;
     protected int num;
     protected boolean ocupada;
-    private Figura pieza;
 
     //=========================================CONSTRUCTOR===================================================
     public Casilla(int letra, int num) {
@@ -40,7 +39,6 @@ public class Casilla {
         }else if(letra==8){
             this.letra ='H';
         }
-        this.pieza = null;
         this.num = num;
         this.ocupada = false;
     }
@@ -61,23 +59,12 @@ public class Casilla {
     public boolean isOcupada() {
         return ocupada;
     }
-    //Pieza
-    public Figura getPieza() {
-        return pieza;
-    }
-    public void setPieza(Figura pieza) {
-        this.pieza = pieza;
-    }
     //===========================================METHODS====================================================
 
     @Override
     public String toString() {
         String res="";
-        if(!this.isOcupada()){
-            res = "|" + this.color + this.letra + this.num + "_|";
-        }else{
-            res = "|" + this.color + this.letra + this.num + this.pieza+"|";
-        }
+        res = "|" + this.color + this.letra + this.num + "_|";
         return res;
     }
 }
