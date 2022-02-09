@@ -6,7 +6,7 @@ public class Caballo extends Figura{
     }
 
     @Override
-    public boolean canMove(Casilla start, Casilla end) {
+    public boolean canMove(Tablero tablero, int inicioNum, int inicioLetra, int destinoNum, int destinoLetra) {
         boolean res =true;
         return res;
     }

@@ -12,7 +12,9 @@ public class Jugador {
     public boolean isWhite() {
         return isWhite;
     }
-    public void setWhite(boolean white) {
-        isWhite = white;
+
+    public boolean moverPieza(Tablero tablero){
+        boolean res=true;
+        return res;
     }
 }

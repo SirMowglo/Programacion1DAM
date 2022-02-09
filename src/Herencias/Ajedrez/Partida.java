@@ -1,8 +1,7 @@
 package Herencias.Ajedrez;
 
 public class Partida {
-    //TODO -Iniciar partida (poner todas las fichas y tal
-    // -Crear turnos (aceptando movimientos)
+    // TODO -Crear turnos (aceptando movimientos)
 
     private Jugador jugador1;
     private Jugador jugador2;
