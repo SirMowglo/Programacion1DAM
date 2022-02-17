@@ -13,8 +13,9 @@ public class Persona {
         this.edad = edad;
     }
 
+
     public void setEdad(int edad) throws ExcepcionGeneral {
-        ExcepcionEdad e= new ExcepcionEdad();
+        ExcepcionPersona e= new ExcepcionPersona();
         e.comprobarEdad(edad);
         this.edad = edad;
     }
